@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <com.hsalf.smilerating.SmileRating
-        android:id="@+id/ratingView"
+    <!--<com.hsalf.smilerating.SmileRating-->
+        <!--android:id="@+id/ratingView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--app:isIndicator="false"/>-->
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        app:isIndicator="false" />
+        android:background="@color/colorPrimary87"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/ratingView"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:placeHolderBackgroundColor="@color/greyTransparent"
+            app:placeHolderSmileColor="@color/whitePrimary"
+            app:textNonSelectionColor="@color/whitePrimary"/>
+    </RelativeLayout>
 
 </RelativeLayout>
